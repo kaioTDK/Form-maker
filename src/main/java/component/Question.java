@@ -8,7 +8,7 @@ public class Question implements Serializable {
     int id;
     int order;
     Answer answer;
-    Assert
+
 
     public Question(int order, Answer answer) {
         this.order = order;

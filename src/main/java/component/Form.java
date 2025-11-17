@@ -1,15 +1,18 @@
 package component;
 
+import java.time.Instant;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Form {
     private String formTitle;
-    private Question question;
-    private LocalDate date;
+    private ArrayList question;
+    private Instant date;
 
-    public Form(String formTitle, Question question){
+    public Form(String formTitle, ArrayList<Question> questions){
         this.formTitle = formTitle;
-        this.question = question;
-        this.date = LocalDate.now();
+        this.question = questions;
+        this.date = Instant.now();
     }
+
 }
