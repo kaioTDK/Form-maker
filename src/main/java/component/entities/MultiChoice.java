@@ -1,7 +1,9 @@
 package component.entities;
 
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
 
 public final class MultiChoice implements Answer {
-    ArrayList choices = new ArrayList<String>();
+    Map choices = new TreeMap<Character,String>();
 }

@@ -3,20 +3,19 @@ package component;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.TreeMap;
 
 public class Form {
     private String formTitle;
-    private ArrayList<Question> question;
+    private TreeMap question = new TreeMap<Short,Question>();
     private Instant date;
 
-    public Form(String formTitle, Question firstQuestion){
+    public Form(String formTitle){
         this.formTitle = formTitle;
-        this.question.add(firstQuestion);
         this.date = Instant.now();
     }
 
     public void addQuestion(Question question){
-        this.question.add(question);
     }
     public void removeQuestion(Question question){
         this.question.remove(question);
