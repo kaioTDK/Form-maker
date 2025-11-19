@@ -2,15 +2,13 @@ package component;
 
 import component.entities.Answer;
 
-import java.io.Serializable;
-
 public final class Question{
-    short order;
+    short questionNum;
     Answer answer;
 
 
     public Question(short order, Answer answer) {
-        this.order = order;
+        this.questionNum = order;
         this.answer = answer;
     }
 
@@ -22,11 +20,11 @@ public final class Question{
         this.answer = answer;
     }
 
-    public int getOrder() {
-        return order;
+    public int getQuestionNum() {
+        return questionNum;
     }
 
-    public void setOrder(short order) {
-        this.order = order;
+    public void setQuestionNum(short questionNum) {
+        this.questionNum = questionNum;
     }
 }
