@@ -26,7 +26,7 @@ public final class Question{
         return order;
     }
 
-    public void setOrder(int order) {
+    public void setOrder(short order) {
         this.order = order;
     }
 }
