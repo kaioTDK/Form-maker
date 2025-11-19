@@ -4,13 +4,12 @@ import component.entities.Answer;
 
 import java.io.Serializable;
 
-public class Question implements Serializable {
-    int id;
-    int order;
+public final class Question{
+    short order;
     Answer answer;
 
 
-    public Question(int order, Answer answer) {
+    public Question(short order, Answer answer) {
         this.order = order;
         this.answer = answer;
     }
@@ -27,7 +26,7 @@ public class Question implements Serializable {
         return order;
     }
 
-    public void setOrder(int order) {
+    public void setOrder(short order) {
         this.order = order;
     }
 }
