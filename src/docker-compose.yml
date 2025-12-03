@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:18.1-trixie
+    restart: always
+
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydb
+
+    ports:
+      - "5656:5656"
+
+  adminer:
+    image: adminer:5.4.1-standalone
+    restart: always
+
+    ports:
+      - "8080:8080"
