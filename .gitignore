@@ -37,4 +37,7 @@ build/
 ### Mac OS ###
 .DS_Store
 
-.env
+### exclude .env
+*/.env
+/.env
+/src/.env
